@@ -1,6 +1,8 @@
 # ArchitectAI - Arquiteto de Software Senior
 
-Sistema de chatbot para análise de código e recomendação de modelos de IA.
+Sistema de chatbot para análise de código e recomendação de modelos de IA. 
+
+No final das contas, criado para ajudar a todos os que começaram com o Antigravity agora. Para não perder tokens tão rápidamente!
 
 ![ArchitectAI](https://img.shields.io/badge/Next.js-16-black?style=flat&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat&logo=typescript)
@@ -29,7 +31,7 @@ Sistema de chatbot para análise de código e recomendação de modelos de IA.
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/architect-ai.git
+git clone https://github.com/igortude/architect-ai.git
 cd architect-ai
 
 # Instale as dependências
@@ -225,7 +227,7 @@ MIT License - Use livremente em seus projetos.
 
 ## 📧 Contato
 
-Dúvidas ou sugestões? Abra uma [Issue](https://github.com/seu-usuario/architect-ai/issues).
+Dúvidas ou sugestões? Abra uma [Issue](https://github.com/igortude/architect-ai/issues).
 
 ---
 
