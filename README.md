@@ -19,8 +19,7 @@
 ---
 
 ## 🚀 Links
-- 🔗 **Repositório:** [github.com/igortude/antigravity-token_analyst](https://github.com/igortude/antigravity-token_analyst)
-- 📚 **Documentação:** [Wiki / Docs](https://github.com/igortude/antigravity-token_analyst/wiki)
+- 🔗 **Repositório:** [https://github.com/igortude/ArchitectAI](https://github.com/igortude/ArchitectAI)
 - 🧪 **Demo Online:** *Em breve*
 
 ---
@@ -60,8 +59,8 @@ O **ArchitectAI** atua como um arquiteto de software assistido por IA. Ele não 
 ### 1. Clonar e Instalar
 ```bash
 # Clone o projeto
-git clone https://github.com/igortude/antigravity-token_analyst.git
-cd antigravity-token_analyst
+git clone https://github.com/igortude/ArchitectAI.git
+cd ArchitectAI
 
 # Instale as dependências com Bun
 bun install
@@ -146,7 +145,4 @@ Distribuído sob a licença **MIT**. Veja o arquivo `LICENSE` para mais detalhes
 
 **💡 Contexto:** Este projeto foi criado para ajudar desenvolvedores — especialmente no ecossistema Antigravity — a economizar tokens e tomar decisões melhores ao usar IA.
 
-**📬 Contato:** Dúvidas ou sugestões? [Abra uma Issue](https://github.com/igortude/antigravity-token_analyst/issues).
-
----
-<p align="center">Feito com ❤️ por <a href="https://github.com/igortude">Igor</a></p>
+**📬 Contato:** Dúvidas ou sugestões? [Abra uma Issue](https://github.com/igortude/ArchitectAI/issues).
