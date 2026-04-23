@@ -22,6 +22,12 @@
 - 🔗 **Repositório:** [https://github.com/igortude/ArchitectAI](https://github.com/igortude/ArchitectAI)
 - 🧪 **Demo Online:** [![Live Demo](https://img.shields.io/badge/Demo-Live-00b4d8?style=for-the-badge&logo=vercel&logoColor=white)](https://architect-ai-plum-seven.vercel.app/)
 
+<p align="center">
+  <a href="https://architect-ai-plum-seven.vercel.app" target="_blank">
+    <img src="https://github.com/igortude/ArchitectAI/blob/main/assets/architect.gif?raw=true" alt="ArchtectAI Demonstração" width="80%">
+  </a>
+</p>
+
 ---
 
 ## 🎯 O Problema
