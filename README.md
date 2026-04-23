@@ -36,10 +36,11 @@ Desenvolvedores frequentemente gastam tokens desnecessários ao usar modelos de 
 - **Quanto custo/token** estão consumindo em cada interação.
 - **Quando usar modelos "baratos" (Flash/Haiku)** vs modelos "Premium" (Pro/Opus).
 
+Com isso, resolvi desenvolver um Arquiteto Senior, que verifica o projeto, buscando por falhas, erros no código... E que através de um chatbot, consegue sugerir um melhor modelo para resolver o problema apresentado ou que o usuário esteja precisando. Lembrando que é baseado no Google Antigravity (vibe coding). 
 **Resultado:** Dinheiro desperdiçado e decisões de engenharia baseadas em tentativa e erro.
 
 ## ✨ A Solução
-O **ArchitectAI** atua como um arquiteto de software assistido por IA. Ele não apenas analisa seu código, mas recomenda a melhor estratégia de execução, priorizando a economia sem sacrificar a qualidade técnica.
+O **ArchitectAI** atua como um arquiteto de software assistido por IA. Ele não apenas analisa seu código, mas recomenda a melhor estratégia de execução, priorizando a economia sem sacrificar a qualidade técnica. Auxiliando, principalemente, iniciantes no vibe coding com a ferramenta.
 
 ### 📊 Resultados Médios
 | Métrica | Impacto |
