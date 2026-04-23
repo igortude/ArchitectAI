@@ -20,7 +20,7 @@
 
 ## 🚀 Links
 - 🔗 **Repositório:** [https://github.com/igortude/ArchitectAI](https://github.com/igortude/ArchitectAI)
-- 🧪 **Demo Online:** [https://architect-ai-plum-seven.vercel.app/](https://architect-ai-plum-seven.vercel.app/)
+- 🧪 **Demo Online:** [![Live Demo](https://img.shields.io/badge/Demo-Live-00b4d8?style=for-the-badge&logo=vercel&logoColor=white)](https://architect-ai-plum-seven.vercel.app/)
 
 ---
 
