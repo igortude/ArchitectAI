@@ -1,234 +1,152 @@
-# ArchitectAI - Arquiteto de Software Senior
+# 🏗️ ArchitectAI
 
-Sistema de chatbot para análise de código e recomendação de modelos de IA. 
-
-No final das contas, criado para ajudar a todos os que começaram com o Antigravity agora. Para não perder tokens tão rápidamente!
-
-![ArchitectAI](https://img.shields.io/badge/Next.js-16-black?style=flat&logo=next.js)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat&logo=typescript)
-![Tailwind](https://img.shields.io/badge/Tailwind-4-38B2AC?style=flat&logo=tailwind-css)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat)
-
-## 🚀 Funcionalidades
-
-- 💬 **Chat Inteligente** - Interface de conversa com IA
-- 📁 **Upload de Código** - Analise arquivos individuais
-- 📦 **Análise de Projetos** - Upload de ZIP para análise completa
-- 🤖 **Recomendação de Modelos** - Sugere o modelo mais eficiente em tokens
-- 🌙 **Dark Mode** - Interface moderna com tema escuro
-- 📱 **Responsivo** - Funciona em desktop e mobile
+> **O Arquiteto de Software Senior na sua máquina.**  
+> Chatbot inteligente para análise de código e otimização radical do uso de LLMs.  
+> Entenda seu código, reduza custos com tokens e escolha o modelo certo para cada tarefa.
 
 ---
 
-## ⚡ Início Rápido
+<div align="center">
 
-### Pré-requisitos
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)
+![Tailwind](https://img.shields.io/badge/Tailwind-4-38B2AC?style=for-the-badge&logo=tailwind-css)
+![Bun](https://img.shields.io/badge/Bun-v1.3+-fbf0df?style=for-the-badge&logo=bun&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-- [Bun](https://bun.sh/) v1.0+ instalado
-- Node.js 18+ (opcional, para compatibilidade)
+</div>
 
-### Instalação
+---
 
+## 🚀 Links
+- 🔗 **Repositório:** [github.com/igortude/antigravity-token_analyst](https://github.com/igortude/antigravity-token_analyst)
+- 📚 **Documentação:** [Wiki / Docs](https://github.com/igortude/antigravity-token_analyst/wiki)
+- 🧪 **Demo Online:** *Em breve*
+
+---
+
+## 🎯 O Problema
+Desenvolvedores frequentemente gastam tokens desnecessários ao usar modelos de IA para análise de código, sem clareza sobre:
+- **Qual modelo é mais eficiente** para o tipo de bug ou refatoração.
+- **Quanto custo/token** estão consumindo em cada interação.
+- **Quando usar modelos "baratos" (Flash/Haiku)** vs modelos "Premium" (Pro/Opus).
+
+**Resultado:** Dinheiro desperdiçado e decisões de engenharia baseadas em tentativa e erro.
+
+## ✨ A Solução
+O **ArchitectAI** atua como um arquiteto de software assistido por IA. Ele não apenas analisa seu código, mas recomenda a melhor estratégia de execução, priorizando a economia sem sacrificar a qualidade técnica.
+
+### 📊 Resultados Médios
+| Métrica | Impacto |
+| :--- | :--- |
+| 💰 **Economia de Tokens** | **~40–50%** |
+| ⚡ **Tempo de Análise** | **~2s por arquivo** |
+| 🎯 **Eficiência de Escolha** | **Alta (Model-Aware)** |
+
+---
+
+## 🚀 Principais Funcionalidades
+- 💬 **Chat Contextual:** Interface de conversa fluida com contexto total dos seus arquivos de código.
+- 📁 **Análise de Arquivos:** Upload de arquivos individuais para revisões rápidas.
+- 📦 **Projetos Completos:** Suporte para upload de arquivos .ZIP para análise de arquitetura.
+- 🤖 **Curadoria de Modelos:** Recomendação automática do modelo ideal baseado no contexto.
+- 📊 **Token Estimator:** Estimativa em tempo real de consumo de tokens.
+- 🌙 **Modern Design:** Interface Dark Mode responsiva com animações suaves (Framer Motion).
+
+---
+
+## ⚙️ Início Rápido
+
+### 1. Clonar e Instalar
 ```bash
-# Clone o repositório
-git clone https://github.com/igortude/architect-ai.git
-cd architect-ai
+# Clone o projeto
+git clone https://github.com/igortude/antigravity-token_analyst.git
+cd antigravity-token_analyst
 
-# Instale as dependências
+# Instale as dependências com Bun
 bun install
+```
 
-# Configure a API (veja seção abaixo)
+### 2. Configurar Ambiente
+```bash
 cp .env.example .env.local
+```
 
-# Rode o projeto
+### 3. Rodar o Projeto
+```bash
 bun run dev
 ```
-
-Acesse: http://localhost:3000
+Acesse: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🔧 Configuração de API
+## 🔧 Configuração de APIs
+O ArchitectAI suporta múltiplos provedores. Configure pelo menos um no seu `.env.local`:
 
-O ArchitectAI suporta múltiplos provedores de IA. **Configure pelo menos um** para funcionalidade completa.
-
-### Opção 1: Google Gemini (GRATUITO) ✅ Recomendado
-
+### ✅ Google Gemini (Recomendado - Tier Gratuito)
 ```bash
-# 1. Obtenha sua chave gratuita em:
-#    https://aistudio.google.com/apikey
-
-# 2. Adicione no .env.local:
+# Obtenha em: https://aistudio.google.com/apikey
 GEMINI_API_KEY=sua_chave_aqui
 ```
+*Limites: 15 req/min | 1M tokens/dia.*
 
-**Limites gratuitos:**
-- 15 requisições/minuto
-- 1.500 requisições/dia
-- 1 milhão de tokens/dia
-
-### Opção 2: OpenAI (Pago)
-
+### 💰 OpenAI & Anthropic
 ```bash
-# 1. Obtenha sua chave em:
-#    https://platform.openai.com/api-keys
-
-# 2. Adicione no .env.local:
 OPENAI_API_KEY=sk-...
-```
-
-**Preços:** ~$0.15/1M tokens (GPT-4o-mini)
-
-### Opção 3: Anthropic Claude (Pago)
-
-```bash
-# 1. Obtenha sua chave em:
-#    https://console.anthropic.com/
-
-# 2. Adicione no .env.local:
 ANTHROPIC_API_KEY=sk-ant-...
 ```
 
-**Preços:** ~$0.80/1M tokens (Claude 3.5 Haiku)
-
-### Sem API? Use o Modo Demo
-
-Se nenhuma API estiver configurada, o sistema funciona em **modo demonstração** com respostas simuladas.
-
----
-
-## 📁 Estrutura do Projeto
-
-```
-src/
-├── app/
-│   ├── api/
-│   │   ├── chat/route.ts        # API de chat
-│   │   └── analyze/route.ts     # API de análise
-│   ├── globals.css              # Estilos globais
-│   ├── layout.tsx               # Layout principal
-│   └── page.tsx                 # Interface do chat
-├── components/
-│   └── ui/                      # Componentes shadcn/ui
-└── lib/
-    ├── ai-providers/            # Provedores de IA
-    │   ├── index.ts             # Gerenciador
-    │   ├── gemini.ts            # Google Gemini
-    │   ├── openai.ts            # OpenAI
-    │   ├── anthropic.ts         # Anthropic
-    │   └── demo.ts              # Modo demo
-    └── utils.ts                 # Utilitários
-```
+> [!NOTE]
+> **Modo Demo:** Se nenhuma chave for configurada, o sistema iniciará automaticamente em **modo de demonstração** com respostas simuladas para testes de interface.
 
 ---
 
 ## 🤖 Modelos Suportados
 
-| Modelo | Tier | Tokens | Melhor Para |
-|--------|------|--------|-------------|
-| Gemini 3 Flash | Econômico | ~2K | Bugs simples, boilerplate |
-| Gemini 3.1 Pro Low | Econômico | ~5K | Refatorações médias |
-| Gemini 3.1 Pro High | Médio | ~10K | Arquitetura, integrações |
-| GPT-OSS 120b | Médio | ~12K | Código legado, docs |
-| Claude Sonnet 4.6 | Premium | ~20K | Debug complexo, ML |
-| Claude Opus 4.6 | Premium | ~40K | Decisões críticas |
+| Modelo | Tier | Uso Recomendado |
+| :--- | :--- | :--- |
+| **Gemini 1.5 Flash** | Econômico | Bugs simples, CSS, Documentação |
+| **Gemini 1.5 Pro** | Equilibrado | Refatorações e Lógica de Negócio |
+| **GPT-4o-mini** | Médio | Código geral e Revisão de PRs |
+| **Claude 3.5 Sonnet** | Premium | Debug complexo e Otimização |
+| **Claude 3 Opus** | Crítico | Mudanças na Arquitetura e Segurança |
 
 ---
 
-## 🔌 Trocando o Provedor de IA
-
-### Usando o arquivo existente
-
-Os provedores já estão prontos em `src/lib/ai-providers/`. Para ativar um:
-
-1. Instale o SDK do provedor desejado:
-
-```bash
-# Para Gemini (gratuito)
-bun add @google/generative-ai
-
-# Para OpenAI
-bun add openai
-
-# Para Anthropic
-bun add @anthropic-ai/sdk
-```
-
-2. Configure a variável de ambiente no `.env.local`
-
-3. Reinicie o servidor
-
-### Prioridade de Provedores
-
-O sistema escolhe automaticamente na ordem:
-1. Gemini (se `GEMINI_API_KEY` existir)
-2. OpenAI (se `OPENAI_API_KEY` existir)
-3. Anthropic (se `ANTHROPIC_API_KEY` existir)
-4. Demo (se nenhum configurado)
-
-### Criando seu próprio provedor
-
-Crie um arquivo em `src/lib/ai-providers/seu-provedor.ts`:
-
-```typescript
-export async function callSeuProvedor(
-  message: string, 
-  history: Array<{role: string, content: string}>,
-  code?: string,
-  codeLanguage?: string
-): Promise<string> {
-  // Sua implementação aqui
-  return "Resposta da IA";
-}
-
-export const SeuProvedorProvider = {
-  name: 'Nome do Provedor',
-  id: 'seu-provedor',
-  call: callSeuProvedor
-};
-```
-
-Depois adicione no `index.ts`.
-
----
-
-## 📋 Scripts Disponíveis
-
-```bash
-bun run dev      # Desenvolvimento (localhost:3000)
-bun run build    # Build para produção
-bun run start    # Rodar build de produção
-bun run lint     # Verificar código
+## 📁 Estrutura do Projeto
+```text
+src/
+├── app/          # Rotas e Endpoints da API (Next.js)
+├── components/   # Componentes de UI (Radix UI + Shadcn)
+├── lib/          # AI Providers e Lógica de Negócios
+└── hooks/        # Hooks customizados para gerenciamento de Chat
 ```
 
 ---
 
 ## 🔒 Segurança
-
-**NUNCA** commite arquivos `.env` ou chaves de API. Elas já estão no `.gitignore`.
-
----
-
-## 📝 Licença
-
-MIT License - Use livremente em seus projetos.
+- **Segurança de API:** Suas chaves nunca são expostas no client-side ou salvas em banco de dados.
+- **Variáveis de Ambiente:** Utilize sempre o arquivo `.env.local` que já está ignorado pelo Git.
 
 ---
 
 ## 🤝 Contribuindo
-
-1. Fork o projeto
-2. Crie uma branch (`git checkout -b feature/nova-feature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
-4. Push para a branch (`git push origin feature/nova-feature`)
-5. Abra um Pull Request
-
----
-
-## 📧 Contato
-
-Dúvidas ou sugestões? Abra uma [Issue](https://github.com/igortude/architect-ai/issues).
+1. Faça um **Fork** do projeto.
+2. Crie uma **Branch** para sua feature (`git checkout -b feature/AmazingFeature`).
+3. Faça o **Commit** das mudanças (`git commit -m 'Add: AmazingFeature'`).
+4. Faça o **Push** para a Branch (`git push origin feature/AmazingFeature`).
+5. Abra um **Pull Request**.
 
 ---
 
-Feito com ❤️ usando Next.js, TypeScript e Tailwind CSS
+## 📄 Licença
+Distribuído sob a licença **MIT**. Veja o arquivo `LICENSE` para mais detalhes.
+
+---
+
+**💡 Contexto:** Este projeto foi criado para ajudar desenvolvedores — especialmente no ecossistema Antigravity — a economizar tokens e tomar decisões melhores ao usar IA.
+
+**📬 Contato:** Dúvidas ou sugestões? [Abra uma Issue](https://github.com/igortude/antigravity-token_analyst/issues).
+
+---
+<p align="center">Feito com ❤️ por <a href="https://github.com/igortude">Igor</a></p>
