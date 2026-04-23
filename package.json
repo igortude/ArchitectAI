@@ -4,7 +4,7 @@
   "description": "Arquiteto de Software Senior - Sistema de análise de código e recomendação de modelos de IA",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "bunx next build",
     "start": "next start",
     "lint": "eslint ."
